@@ -20,22 +20,21 @@ public class Main {
 	parTimeWorkerList.add(ringo);
 
 	// Total salary
-    int total_salary = john.getSalary() + paul.getSalary() + george.getRate() * george.getHours() + ringo.getRate() * ringo.getHours();
+    	int total_salary = john.getSalary() + paul.getSalary() + george.getRate() * george.getHours() + ringo.getRate() * ringo.getHours();
 		
 	// Average salary
-	double average = total_salary /4;
+	double average = total_salary / 4;
 
 	// min salary
-    List<Integer> salaries = new ArrayList<>();
-    salaries.add(john.getSalary());  
+    	List<Integer> salaries = new ArrayList<>();
+    	salaries.add(john.getSalary());  
 	salaries.add(paul.getSalary());
-    salaries.add(george.getRate() * george.getHours());  
+    	salaries.add(george.getRate() * george.getHours());  
 	salaries.add(ringo.getRate() * ringo.getHours());
-    salaries.sort(Comparator.comparingInt(Integer::intValue));
-    int min = salaries.get(0);
+    	salaries.sort(Comparator.comparingInt(Integer::intValue));
+    	int min = salaries.get(0);
 
-    // max
-    int max = salaries.get(3);
-
+    	// max
+    	int max = salaries.get(3);
     }
 }
